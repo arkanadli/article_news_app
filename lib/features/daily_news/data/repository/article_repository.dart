@@ -15,12 +15,17 @@ class ArticleRepositoryImplementation implements ArticleRepository {
   Future<DataState<List<ArticleModel>>> getNewsArticles() async {
     try {
       final httpResponse = await _newsApiService.getNewsArticle(
+      
         newsAPIKey,
         countryQuery,
         categoryQuery,
       );
       if (httpResponse.response.statusCode == HttpStatus.ok) {
-        return DataSuccess(httpResponse.data);
+        List<ArticleModel> articles =
+            (httpResponse.data['articles'] as List<dynamic>)
+                .map((e) => ArticleModel.fromJson(e))
+                .toList();
+        return DataSuccess(articles);
       } else {
         return DataFailed(DioException(
             error: httpResponse.response.statusMessage,
