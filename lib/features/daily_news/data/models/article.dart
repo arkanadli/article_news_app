@@ -1,6 +1,10 @@
 import 'package:article_news/core/constants/constants.dart';
 import 'package:article_news/features/daily_news/domain/entities/article.dart';
+import 'package:floor/floor.dart';
 
+// Using this model as an entity
+// we are not using folder entity model as a entity, because its just an abstract class
+@Entity(tableName: 'article', primaryKeys: ['id'])
 class ArticleModel extends ArticleEntity {
   const ArticleModel({
     int? id,

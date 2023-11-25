@@ -30,6 +30,7 @@ dependencies:
   flutter_hooks: ^0.20.3
   # Chached image network to Chache
   cached_network_image: ^3.3.0
+  ionicons: ^0.2.2
   
 
 
