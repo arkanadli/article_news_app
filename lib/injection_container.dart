@@ -31,7 +31,7 @@ Future<void> initializeDependencies() async {
 
   // article repository
   sl.registerSingleton<ArticleRepository>(
-    ArticleRepositoryImplementation(sl(asdasdas), sl()),
+    ArticleRepositoryImplementation(sl(), sl()),
   );
 
   // UseCases
