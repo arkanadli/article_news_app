@@ -26,6 +26,3 @@ your ultimate news companion built with Flutter. This repository contains the so
 - domain: Houses domain layer components (e.g., use cases, entities, interfaces).
 - presentation: Includes presentation layer components (e.g., UI, view models).
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-project.git
