@@ -15,7 +15,8 @@ final sl = GetIt.instance;
 
 Future<void> initializeDependencies() async {
   // DATABASE
-  final database = await $FloorAppDatabase.databaseBuilder('article_app.db').build();
+  final database =
+      await $FloorAppDatabase.databaseBuilder('article_app.db').build();
   sl.registerSingleton<AppDatabase>(database);
 
   // Dio
