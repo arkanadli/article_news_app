@@ -1,6 +1,6 @@
 # Article News App
 
-your ultimate news companion built with Flutter. This repository contains the source code and resources for the Newsify news article app. Newsify brings you the latest news and trends in a sleek and efficient Flutter app.
+news article mobile application built with Flutter. This repository contains the source code and resources for the Newsify news article app. Newsify brings you the latest news and trends in a sleek and efficient Flutter app with implementing clean architecture.
 
 ## Tech Used
 
