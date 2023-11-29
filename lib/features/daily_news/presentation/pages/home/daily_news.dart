@@ -69,7 +69,7 @@ class DailyNews extends StatelessWidget {
   }
 
   void _onArticlePressed(BuildContext context, ArticleEntity article) {
-    Navigator.pushNamed(context, '/ArticleDetails', arguments: article);
+    Navigator.pushNamed(context, '/ArticleD etails', arguments: article);
   }
 
   void _onShowSavedArticlesViewTapped(BuildContext context) {
