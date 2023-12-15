@@ -37,12 +37,12 @@ class ArticleModel extends ArticleEntity {
           : kDefaultImage,
       publishedAt: map['publishedAt'] ?? "",
       content: map['content'] ?? "",
-    );
+    );  
   }
   factory ArticleModel.fromEntity(ArticleEntity entity) {
     return ArticleModel(
-        id: entity.id,
         author: entity.author,
+        id: entity.id,
         title: entity.title,
         description: entity.description,
         url: entity.url,
